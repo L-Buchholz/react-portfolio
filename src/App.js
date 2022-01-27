@@ -1,12 +1,16 @@
-import './App.css';
-import BucketList from './components/BucketList';
+import "./App.css";
+//
+//Change code to reflect portfolio
+import BucketList from "./components/BucketList";
 
 function App() {
   return (
-    <div className="bucket-app">
+    <div className="react-portfolio-app">
       <BucketList />
     </div>
   );
 }
+//
+//
 
 export default App;
