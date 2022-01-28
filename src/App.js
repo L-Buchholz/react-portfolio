@@ -1,12 +1,17 @@
 import "./App.css";
-//
-//Change code to reflect portfolio
-import BucketList from "./components/BucketList";
+import ContactForm from "./components/Contact";
+//TO-DO:
+import AboutMe from "./components/About-Me";
+import Portfolio from "./components/Portfolio";
+import Resume from "./components/Resume";
 
 function App() {
   return (
     <div className="react-portfolio-app">
-      <BucketList />
+      <AboutMe />
+      <ContactForm />
+      <Portfolio />
+      <Resume />
     </div>
   );
 }

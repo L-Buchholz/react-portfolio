@@ -1,3 +1,7 @@
+## https://beta.reactjs.org/learn
+
+#### ADD HEADER/NAVBAR AND FOOTER
+
 Nav bar -- STATIC, *EXCEPT FOR HIGHLIGHTING
     Name
     About Me (default page; static; highlighted)
