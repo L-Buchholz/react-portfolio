@@ -1,0 +1,29 @@
+Nav bar -- STATIC, *EXCEPT FOR HIGHLIGHTING
+    Name
+    About Me (default page; static; highlighted)
+    Portfolio (clickable and highlightable)
+    Contact (clickable and highlightable)
+    Resume (clickable and highlightable)
+
+Section -- CHANGEABLE (State?)
+    (About Me)
+        Bio -- Text
+        Photo
+    (Portfolio)
+        SIX project examples, each with:
+            Photo
+            Title
+            URL link
+            GitHub link
+    (Resume)
+        Proficiencies -- Text (list?)
+        Link to downloadable resume
+    (Contact)
+        FORM:
+            Name: ...
+            Email address -- VALID email: ...
+            Message field -- VALIDATED -- NOT blank: ...
+
+Footer -- STATIC ("Visit me on...")
+    GitHub
+    LinkedIn
