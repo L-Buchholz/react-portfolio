@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+// TO-DO: Stylize this page
+// Import CSS styling
+import "../Card.css";
 
-function ContactForm(props) {
+function ContactMe(props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -71,4 +74,4 @@ function ContactForm(props) {
   );
 }
 
-export default ContactForm;
+export default ContactMe;

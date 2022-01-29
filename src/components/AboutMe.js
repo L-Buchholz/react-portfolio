@@ -1,8 +1,14 @@
 import React from "react";
+// Import CSS styling
+import "../Card.css";
 
 function AboutMe() {
   return (
-    <div className="about-me">
+    //Does this need to fall under "body"?
+    <article>
+      <div>
+        <h2 id="about-me">About Me</h2>
+      </div>
       <figure>
         <img
           src="./assets/images/Portrait.jpg"
@@ -11,12 +17,12 @@ function AboutMe() {
         <p>
           Hi, I’m Lauren! I’m a professional photographer and communications
           specialist who's currently learning fullstack development through the
-          University of Denver. Click on "Portfolio" to see some of my project
-          examples, or visit my GitHub or LinkedIn pages below to learn more and
-          connect.
+          University of Denver. Click on the links below to see project
+          examples, or visit my resume or the "Contact Me" section to learn more
+          and connect.
         </p>
       </figure>
-    </div>
+    </article>
   );
 }
 

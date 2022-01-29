@@ -1,4 +1,7 @@
 import React from "react";
+// TO DO: Stylize this page
+// Import CSS styling
+import "../Card.css";
 
 function Resume() {
   return (

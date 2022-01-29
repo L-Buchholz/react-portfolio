@@ -1,17 +1,22 @@
 import "./App.css";
-import ContactForm from "./components/Contact";
-//TO-DO:
-import AboutMe from "./components/About-Me";
-import Portfolio from "./components/Portfolio";
-import Resume from "./components/Resume";
+import NavBar from "./components/Navbar";
+import AboutMe from "./components/AboutMe";
+//import Portfolio from ./components/Portfolio";
+//import Resume from ./components/Resume";
+//import ContactMe from ./components/ContactMe";
+import Footer from ".components/Footer";
 
 function App() {
   return (
-    <div className="react-portfolio-app">
+    <div>
+      <NavBar />
       <AboutMe />
-      <ContactForm />
+      {/* 
       <Portfolio />
-      <Resume />
+      <Resume /> 
+      <ContactMe />
+      */}
+      <Footer />
     </div>
   );
 }
