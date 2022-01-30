@@ -1,26 +1,26 @@
 ## TO-DO:
 
-* Nav bar:
-    - Make active pages highlighted
-    * Potential code on Navbar.js
-
-* Portfolio: 
-        SIX project examples, each with:
-            Photo
-            Title
-            URL link
-            GitHub link
-
-## FORMAT: 
-
-* Nav bar 
-    - Text goes outside of parameters at width of 630
-
-* Footer
-    - Text is too far left
-
-* Resume
-
 * Contact
     - Validate email
     - Message field: Enlarge AND cannot be blank
+
+* Homepage:
+    - Make sure page defaults to About Me at "/" (currently: react-portfolio)
+
+* Nav bar:
+    - Make active pages highlighted
+
+* Portfolio: 
+    - SIX project examples
+    - _Examples aren't inline_
+
+## FORMAT: 
+
+* About Me [MOBILE RESPONSIVENESS ISSUE]
+    - Portrait gets squished at small screen sizes
+
+* Nav bar [MOBILE RESPONSIVENESS ISSUE]
+    - Text goes outside of parameters at width of 630
+
+* Footer [MOBILE RESPONSIVENESS ISSUE]
+    - Text is too far left in Column form

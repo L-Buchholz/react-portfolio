@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 //"Styles" enables stylization of image; camel casing required instead of "-"
 const styles = {
@@ -33,34 +32,34 @@ function Portfolio() {
   return (
     <>
       <div style={styles.article}>
-        <h2 id="my-work">Portfolio</h2>
+        <h2 id="portfolio">Portfolio</h2>
       </div>
       <div style={styles.example} id="uProjekt">
-        <Link to="https://l-buchholz.github.io/project-1/" target="blank">
+        <a href="https://l-buchholz.github.io/project-1/" target="blank">
           <img
             style={styles.exampleImg}
             src={process.env.PUBLIC_URL + "/images/uProjeckt-screenshot.png"}
             alt="uProjekt webpage project management tool for programmers (top project)"
           />
-        </Link>
+        </a>
       </div>
       <div style={styles.example} className="examples" id="nurseryRhymesQuiz">
-        <Link to="https://l-buchholz.github.io/code-quiz/" target="blank">
+        <a href="https://l-buchholz.github.io/code-quiz/" target="blank">
           <img
             style={styles.exampleImg}
             src={process.env.PUBLIC_URL + "/images/nursery-rhymes-quiz.png"}
             alt="Interactive timed nursery rhymes quiz (&copy;Lauren Buchholz)"
           />
-        </Link>
+        </a>
       </div>
       <div style={styles.example} className="examples" id="dayCalendar">
-        <Link to="https://l-buchholz.github.io/day-calendar/" target="blank">
+        <a href="https://l-buchholz.github.io/day-calendar/" target="blank">
           <img
             style={styles.exampleImg}
             src={process.env.PUBLIC_URL + "/images/workday-calendar.png"}
             alt="Interactive workday scheduler (&copy;Lauren Buchholz)"
           />
-        </Link>
+        </a>
       </div>
     </>
   );

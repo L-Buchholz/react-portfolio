@@ -1,25 +1,42 @@
 import React from "react";
-// TO DO: Stylize this page
+
+const styles = {
+  article: {
+    display: "flex",
+    borderBottom: "1px solid #d8a47f",
+    margin: "1% 0",
+  },
+};
 
 function Resume() {
   return (
-    <div className="resume">
-      <div>
-        <h2>Proficiencies</h2>
-        <br />
-        <ul>Example 1</ul>
-        <ul>Example 2</ul>
-        <ul>Example 3</ul>
-        <ul>Example 4</ul>
-        <br />
-        <a
-          href="https://drive.google.com/file/d/17YUD3RYDvmX_bB3Ji5bss53g-BrWwTAJ/view"
-          target="blank"
-        >
-          Click here to download my resume
-        </a>
+    <>
+      <div style={styles.article}>
+        <h2 id="resume">Resume</h2>
       </div>
-    </div>
+      <div style={styles.article}>
+        <div>
+          <h4>Proficiencies</h4>
+          <ul>HTML</ul>
+          <ul>CSS</ul>
+          <ul>JavaScript</ul>
+          <ul>JQuery</ul>
+          <ul>Express.js</ul>
+          <ul>Node.js</ul>
+          <ul>MongDB (inc. Mongoose)</ul>
+          <ul>MySQL</ul>
+          <br />
+          <a
+            href="https://drive.google.com/file/d/17YUD3RYDvmX_bB3Ji5bss53g-BrWwTAJ/view"
+            target="blank"
+          >
+            Click here to download my resume
+          </a>
+          <br />
+          <br />
+        </div>
+      </div>
+    </>
   );
 }
 
