@@ -1,17 +1,14 @@
 /*
 TO-DO: 
-- Updated breakpoint page links, below
 - Make "About Me" default page and HIGHLIGHT
-- Have other page highlighted when user is on them
+- Have every other page highlighted when user is on it
 */
 
-import React from "react";
-// Import CSS styling
-import "../Header.css";
+//NavLink enables active link highlighting when URL is selected
+import { Link, NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
-    //<header className="header", instead?>
     <header>
       <img
         class="banner"
@@ -22,16 +19,22 @@ function NavBar() {
       <nav>
         <ul>
           <li>
-            <a href="#about-me">About Me</a>
+            {/* Demo color: Desired color = "d1bd07" */}
+            <NavLink
+              className={(navData) => (navData.isActive ? "red" : "")}
+              to="/about-me"
+            >
+              About Me
+            </NavLink>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <Link to="/portfolio">Portfolio</Link>
           </li>
           <li>
-            <a href="#resume">Resume</a>
+            <Link to="resume">Resume</Link>
           </li>
           <li>
-            <a href="#contact-me">Contact Me</a>
+            <Link to="contact-me">Contact Me</Link>
           </li>
         </ul>
       </nav>
