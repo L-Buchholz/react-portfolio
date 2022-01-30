@@ -5,10 +5,24 @@ body {
   font-family: "Montserrat";
 }
 
+/* Applies to website banner */
+img {
+  display: flex;
+  flex: 1 1 0;
+  margin-bottom: 2%;
+  /* added above */
+  width: 100%;
+  height: 192px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-bottom: 1px solid #d8a47f;
+}
+
 h2 {
   font-size: 180%;
   margin-left: 10px;
   margin-right: 75px;
+  padding: 2%;
 }
 
 main {
@@ -42,41 +56,6 @@ article {
   margin-right: 160px;
 }
 
-/* Establishes self-portrait and accompanying bio text on same line */
-
-figure img {
-  display: inline;
-  flex-wrap: nowrap;
-  float: left;
-  width: 30%;
-  padding: 4px;
-  margin-right: 2px;
-  margin-left: 2%;
-}
-
-p {
-  display: inline;
-  flex-wrap: nowrap;
-  float: right;
-  width: 65%;
-  color: black;
-  margin: auto;
-}
-
-/* Designates styling for all but top/primary example application, 
-including "Example" content boxes */
-
-.examples {
-  flex-direction: row;
-  justify-content: space-between;
-  width: 50%;
-  height: 200px;
-  margin: 1% 1%;
-  border-style: solid;
-  border-width: 4px;
-  position: relative;
-}
-
 /*
 <!--Include: *target BLANK repo link*?-->
 .github-link::after ?
@@ -94,7 +73,20 @@ including "Example" content boxes */
 }
 */
 
-#examples1::after {
+#uProjekt::after {
+  content: "uProjekt: Interactive project management application";
+  text-align: left;
+  padding-left: 5px;
+  border-radius: 2px solid black;
+  width: 200px;
+  height: 42px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#nurseryRhymesQuiz::after {
   content: "Interactive timed nursery rhymes quiz";
   text-align: left;
   padding-left: 5px;
@@ -107,7 +99,7 @@ including "Example" content boxes */
   bottom: 0;
 }
 
-#examples2::after {
+#dayCalendar::after {
   content: "Interactive workday tasks scheduler";
   text-align: left;
   padding-left: 5px;
@@ -118,46 +110,6 @@ including "Example" content boxes */
   position: absolute;
   left: 0;
   bottom: 0;
-}
-
-img {
-  width: 100%;
-  height: 192px;
-  object-fit: cover;
-  object-position: 50% 50%;
-}
-
-/* Designates separate styling for top/primary example application 
-versus others, including "Example" content box */
-
-.example1 {
-  flex-direction: column;
-  width: 100%;
-  height: 400px;
-  margin: 0 1%;
-  border-style: solid;
-  border-width: 4px;
-  position: relative;
-}
-
-.example1::after {
-  content: "uProjekt: Interactive project management application";
-  text-align: left;
-  padding-left: 5px;
-  border-radius: 2px solid black;
-  width: 190px;
-  height: 42px;
-  background: #fff;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-#top {
-  width: 100%;
-  height: 392px;
-  object-fit: cover;
-  object-position: 50% 50%;
 }
 
 article p {
@@ -206,15 +158,19 @@ smaller screens */
   h2 {
     text-align: center;
     margin: 2% 0;
-    border-top: 1px solid #d8a47f;
+    /* border-top: 1px solid #d8a47f; */
     padding: 2%;
   }
 
-  figure {
-    flex-direction: column;
+  #uProjekt {
+    width: 100%;
   }
 
-  .examples {
+  #nurseryRhymesQuiz {
+    width: 100%;
+  }
+
+  #dayCalendar {
     width: 100%;
   }
 

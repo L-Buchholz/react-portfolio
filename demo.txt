@@ -3,9 +3,6 @@
 * Nav bar:
     - Make active pages highlighted
 
-* About Me:
-    - Get portrait in line with text
-
 * Portfolio: 
         SIX project examples, each with:
             Photo
@@ -14,6 +11,9 @@
             GitHub link
 
 ## FORMAT: 
+
+* Header
+* Footer
 
 * Resume
 
