@@ -1,6 +1,5 @@
 import React from "react";
-// Import CSS styling
-import "../Card.css";
+import { Link } from "react-router-dom";
 
 function Portfolio() {
   return (
@@ -10,19 +9,18 @@ function Portfolio() {
         <div>
           <h2 id="my-work">My Work</h2>
         </div>
-        <div class="example1">
-          <a href="https://l-buchholz.github.io/project-1/" target="blank">
+        <div className="example1">
+          <Link to="https://l-buchholz.github.io/project-1/" target="blank">
             <img
-              id="top"
-              src="./assets/images/uProjeckt-screenshot.jpg"
+              src="./images/uProjeckt-screenshot.png"
               alt="uProjekt webpage project management tool for programmers (top project)"
             />
-          </a>
+          </Link>
         </div>
       </article>
       <article>
-        <div class="blankspace"></div>
-        <div class="examples github-link" id="examples1">
+        <div className="blankspace"></div>
+        <div className="examples github-link" id="examples1">
           <a href="https://l-buchholz.github.io/code-quiz/" target="blank">
             <img
               src="./assets/images/nursery-rhymes-quiz.png"
@@ -30,7 +28,7 @@ function Portfolio() {
             />
           </a>
         </div>
-        <div class="examples github-link" id="examples2">
+        <div className="examples github-link" id="examples2">
           <a href="https://l-buchholz.github.io/day-calendar/" target="blank">
             <img
               src="./assets/images/workday-calendar.png"

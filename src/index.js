@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 // CSS styling
-import "./Card.css";
-import "./Footer.css";
-import "./Header.css";
+import "./components/assets/css/Card.css";
+import "./components/assets/css/Footer.css";
+import "./components/assets/css/Header.css";
 import App from "./App";
 
 ReactDOM.render(

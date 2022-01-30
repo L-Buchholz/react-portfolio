@@ -1,6 +1,4 @@
 import React from "react";
-// Import CSS styling
-import "../Card.css";
 
 function AboutMe() {
   return (
@@ -9,12 +7,13 @@ function AboutMe() {
       <div>
         <h2 id="about-me">About Me</h2>
       </div>
-      <figure>
+      <figure className="figure">
         <img
-          src="./assets/images/Portrait.jpg"
+          className="img"
+          src={process.env.PUBLIC_URL + "/images/Portrait.png"}
           alt="Lauren Buchholz self-portrait (&copy;Lauren Buchholz)"
         />
-        <p>
+        <p className="p">
           Hi, I’m Lauren! I’m a professional photographer and communications
           specialist who's currently learning fullstack development through the
           University of Denver. Click on the links below to see project
