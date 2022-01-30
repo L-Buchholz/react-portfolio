@@ -1,9 +1,5 @@
 /*
 *
-TO-DO: 
-- Make "About Me" default page and HIGHLIGHT
-- Have every other page highlighted when user is on it
-
 JS:
 currentLinks = document.querySelectorAll('a[href="'+document.URL+'"]')
 currentLinks.forE‌​ach(function(link) {
@@ -82,6 +78,7 @@ function NavBar() {
       </div>
       <img
         styles={styles.navBarImg}
+        id="banner"
         src={process.env.PUBLIC_URL + "/images/Greek_cafe.png"}
         alt="Website banner -- Cafe in Greece (&copy;Lauren Buchholz)"
       />

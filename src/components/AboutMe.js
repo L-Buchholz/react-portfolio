@@ -4,14 +4,10 @@ import React from "react";
 const styles = {
   article: {
     display: "flex",
-    flex: "1 1 0",
-    paddingRight: "1%",
-    paddingLeft: "1%",
-    flexDirection: "column",
     borderBottom: "1px solid #d8a47f",
     margin: "1% 0",
   },
-  img: {
+  portrait: {
     display: "inline",
     flexWrap: "nowrap",
     float: "left",
@@ -38,7 +34,7 @@ function AboutMe() {
       </div>
       <div style={styles.article}>
         <img
-          style={styles.img}
+          style={styles.portrait}
           src={process.env.PUBLIC_URL + "/images/Portrait.png"}
           alt="Lauren Buchholz self-portrait (&copy;Lauren Buchholz)"
         />

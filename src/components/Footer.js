@@ -1,10 +1,20 @@
 import React from "react";
 
+const styles = {
+  footerStyle: {
+    display: "flex",
+    textAlign: "center",
+    backgroundColor: "#13293d",
+    color: "#fff",
+    justifyContent: "space-evenly",
+    width: "100%",
+  },
+};
+
 function Footer() {
   return (
-    //Does this need to fall under "body"?
-    <footer>
-      <article>
+    <div style={styles.footerStyle}>
+      <footer>
         <ul>
           <li>
             <a href="https://github.com/L-Buchholz" target="blank">
@@ -28,8 +38,8 @@ function Footer() {
             </a>
           </li>
         </ul>
-      </article>
-    </footer>
+      </footer>
+    </div>
   );
 }
 

@@ -71,9 +71,3 @@ smaller screens */
     text-align: right;
   }
 }
-
-@media screen and (max-width: 630px) {
-  nav ul {
-    max-width: 100px;
-  }
-}

@@ -5,10 +5,6 @@ import { Link } from "react-router-dom";
 const styles = {
   article: {
     display: "flex",
-    flex: "1 1 0",
-    paddingRight: "1%",
-    paddingLeft: "1%",
-    flexDirection: "column",
     borderBottom: "1px solid #d8a47f",
     margin: "1% 0",
   },
@@ -37,7 +33,7 @@ function Portfolio() {
   return (
     <>
       <div style={styles.article}>
-        <h2 id="my-work">My Work</h2>
+        <h2 id="my-work">Portfolio</h2>
       </div>
       <div style={styles.example} id="uProjekt">
         <Link to="https://l-buchholz.github.io/project-1/" target="blank">

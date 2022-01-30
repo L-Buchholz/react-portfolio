@@ -5,48 +5,25 @@ body {
   font-family: "Montserrat";
 }
 
-footer {
+footer ul {
   display: flex;
-  flex: 1 1 0;
-  max-width: 100%;
-  margin: 2% auto;
+  list-style: none;
 }
 
-/* section {
-  display: flex;
-  flex: 1 1 0;
-  padding-right: 1%;
-  padding-left: 1%;
-  flex-direction: column;
-  border-bottom: 1px solid #d8a47f;
-} */
-
-article {
-  display: flex;
-  margin: 1% 0;
-}
-
-/* Enables continuous margin */
-
-.blankspace {
-  margin-left: 10px;
-  margin-right: 160px;
-}
-
-/* Enables interactive links */
-
-article li {
-  padding: 1%;
+footer li {
+  color: #8ac4ff;
+  min-width: 300px;
   font-family: cursive;
+  list-style: none;
 }
 
-article a {
-  color: #13293d;
+footer a {
+  color: #b9c6ae;
   font-weight: bold;
   text-decoration: none;
 }
 
-article a:hover {
+footer a:hover {
   color: #d1bd07;
 }
 
@@ -54,24 +31,12 @@ article a:hover {
 smaller screens */
 
 @media screen and (max-width: 768px) {
-  main,
-  article,
   footer {
     flex-direction: column;
   }
-
-  section {
-    padding-right: 0;
-  }
-
-  h2 {
-    text-align: center;
-    margin: 2% 0;
-    border-top: 1px solid #d8a47f;
-    padding: 2%;
-  }
-
-  figure {
+  footer ul {
     flex-direction: column;
+    text-align: left;
+    padding-left: 0px;
   }
 }

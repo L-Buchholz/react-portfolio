@@ -2,6 +2,7 @@
 
 * Nav bar:
     - Make active pages highlighted
+    * Potential code on Navbar.js
 
 * Portfolio: 
         SIX project examples, each with:
@@ -12,14 +13,14 @@
 
 ## FORMAT: 
 
-* Header
+* Nav bar 
+    - Text goes outside of parameters at width of 630
+
 * Footer
+    - Text is too far left
 
 * Resume
 
 * Contact
     - Validate email
     - Message field: Enlarge AND cannot be blank
-
-* Footer 
-    - "Visit me on..."
