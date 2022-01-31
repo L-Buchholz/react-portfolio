@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/react-portfolio">
       <NavBar />
       <Routes>
         <Route path="/" element={<AboutMe />} />
