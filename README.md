@@ -23,4 +23,4 @@ The following is a screenshot of the webpage, highlighting its appearance and fu
 
 ## Link to deployed application
 
-My portfolio page can be found here: LINKME
+My portfolio page can be found here: https://l-buchholz.github.io/react-portfolio/
