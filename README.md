@@ -15,16 +15,12 @@ An employer/hiring manager has requested a React portfolio page that highlights 
 
 Additionally, all images have alt tags attributed to them for accessibility and the code includes comments.
 
-## ADD ME !!
-
 ## Portfolio webpage
 
 The following is a screenshot of the webpage, highlighting its appearance and functionality:
 
-![Lauren's portfolio webpage. This image includes: a header/navigation bar, including "About Me", "Portfolio", "Contact", and "Resume" sections; and a content area featuring the currently-selected section as an example.](./LINKME)
+![Lauren's portfolio webpage. This image includes: a header/navigation bar, including "About Me", "Portfolio", "Contact", and "Resume" sections; and a content area featuring the currently-selected Portfolio section as an example.](./readme-screenshot.png)
 
 ## Link to deployed application
-
-## ADD LINK HERE !!
 
 My portfolio page can be found here: LINKME

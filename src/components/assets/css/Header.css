@@ -29,7 +29,6 @@ h1::after {
 nav ul {
   display: flex;
   justify-content: space-between;
-  min-width: 300px;
   list-style: none;
 }
 

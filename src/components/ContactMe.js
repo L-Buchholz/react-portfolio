@@ -4,23 +4,19 @@ function ContactMe(props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [emailError, setEmailError] = useState(null);
+  const [msgError, setMsgError] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    props.onSubmit({
-      name: name,
-      email: email,
-      message: message,
-    });
-
     //Validates email using Regex
-    if (!/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test({ email }).val()) {
-      throw ErrorEvent("Please enter valid email address");
+    if (!/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(email)) {
+      setEmailError("Please enter a valid email address");
     }
 
-    if ({ message } === "") {
-      throw ErrorEvent("Please enter a message before submitting");
+    if (message === "") {
+      setMsgError("Please enter a message before submitting");
     }
 
     setName("");
@@ -73,17 +69,19 @@ function ContactMe(props) {
             onChange={(e) => setEmail(e.target.value)}
           ></input>
           <br />
+          {/* Errors need to be displayed for setErrors to work */}
+          {emailError}
           <br />
-          <input
+          <textarea
             style={styles.message}
-            type="text"
             placeholder="Enter message here"
             value={message}
             name="message"
             className="message-input"
             onChange={(e) => setMessage(e.target.value)}
-          ></input>
+          ></textarea>
           <br />
+          {msgError}
           <br />
           <button className="submit-button">Submit</button>
           <br />

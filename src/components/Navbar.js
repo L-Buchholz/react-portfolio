@@ -1,19 +1,5 @@
-/*
-*
-JS:
-currentLinks = document.querySelectorAll('a[href="'+document.URL+'"]')
-currentLinks.forE‌​ach(function(link) {
-    link.{styles.C}+= ' current-link')
-});
-CSS (add under styles): 
-  currentLink: {
-    color: "#d1bd07",
-  },
-*
-*/
-
 //NavLink enables active link highlighting when URL is selected
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 // Camel casing necessary to replace "-"
 const styles = {
@@ -26,16 +12,6 @@ const styles = {
     backgroundColor: "#13293d",
     color: "#fff",
   },
-  /*
-  REVISED:
-  navBarImg: {
-    width: "100%",
-    height: "300px",
-    objectFit: "cover",
-    objectPosition: "50% 50%",
-    border: "2px solid black",
-  },
-  */
   navBarImg: {
     display: "flex",
     flex: "1 1 0",
@@ -56,22 +32,44 @@ function NavBar() {
         <nav>
           <ul>
             <li>
-              {/* Demo color: Desired color = "d1bd07" */}
               <NavLink
-                className={(navData) => (navData.isActive ? "red" : "")}
+                style={({ isActive }) =>
+                  isActive ? { color: "#d1bd07" } : undefined
+                }
                 to="/about-me"
               >
                 About Me
               </NavLink>
             </li>
             <li>
-              <Link to="/portfolio">Portfolio</Link>
+              <NavLink
+                style={({ isActive }) =>
+                  isActive ? { color: "#d1bd07" } : undefined
+                }
+                to="/portfolio"
+              >
+                Portfolio
+              </NavLink>
             </li>
             <li>
-              <Link to="resume">Resume</Link>
+              <NavLink
+                style={({ isActive }) =>
+                  isActive ? { color: "#d1bd07" } : undefined
+                }
+                to="/resume"
+              >
+                Resume
+              </NavLink>
             </li>
             <li>
-              <Link to="contact-me">Contact Me</Link>
+              <NavLink
+                style={({ isActive }) =>
+                  isActive ? { color: "#d1bd07" } : undefined
+                }
+                to="/contact-me"
+              >
+                Contact Me
+              </NavLink>
             </li>
           </ul>
         </nav>
