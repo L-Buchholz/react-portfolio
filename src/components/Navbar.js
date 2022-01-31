@@ -36,7 +36,8 @@ function NavBar() {
                 style={({ isActive }) =>
                   isActive ? { color: "#d1bd07" } : undefined
                 }
-                to="/about-me"
+                to="/"
+                exact
               >
                 About Me
               </NavLink>

@@ -1,6 +1,7 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
+  "homepage": "http://l-buchholz.github.io/react-portfolio",
   "private": true,
   "dependencies": {
     "gh-pages": "^3.2.3",

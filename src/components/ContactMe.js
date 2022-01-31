@@ -4,21 +4,39 @@ function ContactMe(props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [emailError, setEmailError] = useState(null);
-  const [msgError, setMsgError] = useState(null);
+  const [error, setError] = useState(null);
+
+  const onNameBlur = () => {
+    if (!name.length) {
+      setError("You must enter a name.");
+    } else {
+      setError("");
+    }
+  };
+  const onEmailBlur = () => {
+    if (!email.length) {
+      setError("You must enter an email.");
+    } else {
+      setError("");
+    }
+  };
+  const onMessageBlur = () => {
+    if (!message.length) {
+      setError("You must enter a message.");
+    } else {
+      setError("");
+    }
+  };
+  const emailOnChange = (e) => {
+    setEmail(e.target.value);
+    //Validates email using Regex
+    if (!/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(email)) {
+      setError("Please enter a valid email address.");
+    }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    //Validates email using Regex
-    if (!/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(email)) {
-      setEmailError("Please enter a valid email address");
-    }
-
-    if (message === "") {
-      setMsgError("Please enter a message before submitting");
-    }
-
     setName("");
     setEmail("");
     setMessage("");
@@ -56,6 +74,7 @@ function ContactMe(props) {
             name="name"
             className="name-input"
             onChange={(e) => setName(e.target.value)}
+            onBlur={onNameBlur}
           ></input>
           <br />
           <br />
@@ -66,11 +85,10 @@ function ContactMe(props) {
             value={email}
             name="email"
             className="email-input"
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={emailOnChange}
+            onBlur={onEmailBlur}
           ></input>
           <br />
-          {/* Errors need to be displayed for setErrors to work */}
-          {emailError}
           <br />
           <textarea
             style={styles.message}
@@ -79,9 +97,11 @@ function ContactMe(props) {
             name="message"
             className="message-input"
             onChange={(e) => setMessage(e.target.value)}
+            onBlur={onMessageBlur}
           ></textarea>
           <br />
-          {msgError}
+          {/* Errors need to be displayed for setErrors to work */}
+          {error}
           <br />
           <button className="submit-button">Submit</button>
           <br />
